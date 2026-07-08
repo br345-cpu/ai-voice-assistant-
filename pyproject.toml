@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "voice-assistant"
+version = "0.1.0"
+description = "A push-to-talk voice assistant"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "SpeechRecognition==3.10.4",
+  "pyttsx3==2.98",
+  "requests==2.32.3",
+  "PyAudio==0.2.14",
+  "Flask==3.0.3",
+  "anthropic==0.39.0",
+]
+
+[project.scripts]
+voice-assistant = "main:main"
